@@ -4,7 +4,7 @@ int main(void)
 char ch;
 ch = 'a';
 
-for (ch = 'a' ; ch < 'z' ; ch++)
+for (ch = 'a' ; ch <= 'z' ; ch++)
 {
 
 if (ch == ('p' + 1) || ch == ('d' + 1))
