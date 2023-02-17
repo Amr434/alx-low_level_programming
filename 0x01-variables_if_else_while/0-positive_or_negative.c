@@ -3,10 +3,11 @@
 #include<time.h>
 int main(void)
 {
-srand(time(NULL));
 int num;
 
 num = rand();
+
+srand(time(NULL));
 
 if (num > 0)
 printf("%d is positive\n", num);
