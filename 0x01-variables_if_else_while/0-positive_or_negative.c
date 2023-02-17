@@ -5,9 +5,9 @@ int main(void)
 {
 int num;
 
-num = rand();
+num = rand() - RAND_MAX / 2;
 
-srand(time(NULL));
+srand(time(0));
 
 if (num > 0)
 printf("%d is positive\n", num);
