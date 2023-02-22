@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "main.h"
 /**
- * this func print alpha from a-z 10 time
+ * print_alphabet_x10 - Prints 10 times the alphabet, in lowercase.
 */
 void print_alphabet_x10(void)
 {
