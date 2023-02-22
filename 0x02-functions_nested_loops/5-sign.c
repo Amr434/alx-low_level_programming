@@ -3,9 +3,7 @@
 
 /**
 *print_sign-func check for number is enter
-*
 *@n: charchter checked 
-*
 *Return: print_sign return 1 if id greater
 *
 */
