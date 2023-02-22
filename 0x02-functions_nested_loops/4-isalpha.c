@@ -3,10 +3,8 @@
 
 /**
 *_isalpha-check if input is alpha or not
-*
-*@c is input
-*
-*return 1 if is alph 0 if not
+*@c is  input take from user
+*return 1 if isalpha 0 if not
 */
 int _isalpha(int c)
 {
