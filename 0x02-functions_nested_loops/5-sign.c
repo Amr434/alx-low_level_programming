@@ -3,10 +3,9 @@
 
 /**
 *print_sign-func check for number is enter
-*@n: charchter checked 
+*@n:charchter checked
 *
 *Return: print_sign return 1 if id greater
-*
 */
 int print_sign(int n)
 {
