@@ -5,7 +5,7 @@
 *
 *Return: function return last digit of number after check abs
 */
-int print_last_digit(int n)
+int print_last_digit(long int n)
 {
 
 if (n < 0)
