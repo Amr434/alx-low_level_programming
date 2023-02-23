@@ -25,9 +25,16 @@ else
 _putchar((i * j) + '0');
 if (j == 9)
 continue;
+if( (j*i >=5  && i >=4) || (j*i >=8 && (i ==3 || i==2 )))
+{
 _putchar(',');
 _putchar(' ');
+}
+else
+{
+_putchar(',');
 _putchar(' ');
+}
 }
 
 
