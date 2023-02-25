@@ -23,9 +23,8 @@ printf("%s ", "Buzz");
 }
 else
 {
-if (i > 9)
-putchar((i / 10) + '0');
-putchar((i % 10) + '0');
+printf("%d", i);
+if (i != 100)
 putchar(' ');
 }
 }
