@@ -20,10 +20,13 @@ _putchar(' ');
 }
 _putchar('\\');
 if (i == n - 1)
+<<<<<<< HEAD
 continue;
+=======
+  continue;
+>>>>>>> 7687270c750329fc8cf148d4a8f528b281506b99
 _putchar('\n');
 }
-
 }
 _putchar('\n');
 }
