@@ -19,8 +19,11 @@ for (j = 0 ; j < i ; j++)
 _putchar(' ');
 }
 _putchar('\\');
+if (i == n - 1)
+continue;
 _putchar('\n');
 }
 
 }
+_putchar('\n');
 }
