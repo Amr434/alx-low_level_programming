@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
-*_puts - print string followed by line
+*print_rev - print reversed string followed by line
 *@str: arr of charachter
 */
 void print_rev(char *str)
