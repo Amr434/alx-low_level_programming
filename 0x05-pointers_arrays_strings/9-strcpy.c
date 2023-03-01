@@ -16,7 +16,7 @@ length = strlen(src);
 
 while (src[i])
 {
-*(dest + i) = *(src + i);
+ dest[i] = src[i];
   i++;
 }
 dest[i] = '\n';
