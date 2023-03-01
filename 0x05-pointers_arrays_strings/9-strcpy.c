@@ -18,6 +18,7 @@ for (i = 0 ; i < length ; i++)
 {
 *(dest + i) = *(src + i);
 }
+dest[i]='\n';
 
 return (dest);
 }
