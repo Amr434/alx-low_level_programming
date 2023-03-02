@@ -9,14 +9,17 @@
 */
 char *cap_string(char *str)
 {
-int length, i;
+int length, i, j;
 length = strlen(str);
+char sep[] = " \t\n,;.!?\"(){}";
 for (i = 0 ; i < length ; i++)
 {
-
-if (str[i] == '\n' || str[i] == ' ' || str[i] == '.')
+while (sep[j] != '\0')
+{
+if (str[i] == sep[j])
 str[i + 1] = toupper(str[i + 1]);
-
+  j++
+}
 if (str[i] == '\t')
 {
 str[i] = ' ';
