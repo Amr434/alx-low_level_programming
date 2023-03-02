@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include "main.h"
 /**
 *cap_string - capitalizes all words of a string.
 *@str: array of charachter
@@ -13,7 +14,7 @@ length = strlen(str);
 for (i = 0 ; i < length ; i++)
 {
 
-if (str[i] == '\n' || str[i] == ' ')
+if (str[i] == '\n' || str[i] == ' ' || str[i] == '.')
 str[i + 1] = toupper(str[i + 1]);
 
 if (str[i] == '\t')
