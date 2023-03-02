@@ -9,18 +9,15 @@
 */
 char *cap_string(char *str)
 {
-int length, i, j;
+int length, i;
 length = strlen(str);
-char sep[] = " \t\n,;.!?\"(){}";
-j = 0;
+//char sep[] = " \t\n,;.!?\"(){}";
+
 for (i = 0 ; i < length ; i++)
 {
-while (sep[j] != '\0')
-{
-if (str[i] == sep[j])
+if (str[i] == '\n' ||  str[i] == ' '  || str[i]=='.' || str[i]==',' || str[i]=='!'  || str[i]=='?' || str[i]=='\"' || str[i]=='(' || str[i]==')' || str[i]=='}' || str[i]=='{')
 str[i + 1] = toupper(str[i + 1]);
-  j++
-}
+
 if (str[i] == '\t')
 {
 str[i] = ' ';
