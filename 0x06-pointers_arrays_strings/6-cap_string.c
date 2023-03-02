@@ -15,7 +15,7 @@ length = strlen(str);
 
 for (i = 0 ; i < length ; i++)
 {
-if (str[i] == '\n' ||  str[i] == ' '  || str[i]=='.' || str[i]==',' || str[i]=='!'  || str[i]=='?' || str[i]=='\"' || str[i]=='(' || str[i]==')' || str[i]=='}' || str[i]=='{')
+if (str[i] == '\n' ||  str[i] == ' '  || str[i] == '.' || str[i] == ',' || str[i]== '!'  || str[i] == '?' || str[i] == '\"' || str[i] == '(' || str[i] == ')' || str[i] =='}' || str[i]== '{')
 str[i + 1] = toupper(str[i + 1]);
 
 if (str[i] == '\t')
