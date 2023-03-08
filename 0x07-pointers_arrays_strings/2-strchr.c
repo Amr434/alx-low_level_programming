@@ -8,8 +8,7 @@
 *@c: charchter search
 *return: slice of arr
 */
-char *_strchr(char *s, char c)
-{
+
 
 char *_strchr(char *s, char c)
 {
@@ -24,5 +23,4 @@ char *_strchr(char *s, char c)
 	}
 
 	return (NULL);
-}
 }
