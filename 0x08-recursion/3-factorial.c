@@ -6,6 +6,10 @@
 */
 int factorial(int n)
 {
+if (n < 0)
+{
+return; 
+}
 if (n == 1)
 {
 return (1);
