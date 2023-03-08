@@ -8,16 +8,13 @@
 */
 int is_recursion(int g, int n)
 {
-if (g > (n / 2))
-{
+if (g * g > n)
 return (-1);
-}
-if (g * g == n)
-{
-return (g);
-}
 
-is_recursion(g + 1, n);
+if (g * g == n)
+return (g);
+
+return (is_recursion(g + 1, n));
 }
 /**
 *_sqrt_recursion - get square root
@@ -26,6 +23,8 @@ is_recursion(g + 1, n);
 */
 int _sqrt_recursion(int n)
 {
+if (n == 0)
+return (0);
 
 return (is_recursion(1, n));
 }
