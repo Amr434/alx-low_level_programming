@@ -8,8 +8,19 @@
 *@c: charchter search
 *return: slice of arr
 */
+
+
 char *_strchr(char *s, char c)
 {
+	int i;
 
-return (strchr(s, c));
+	for (i = 0; s[i] >= '\0'; i++)
+	{
+		if (s[i] == c)
+		{
+			return (s + i);
+		}
+	}
+
+	return (NULL);
 }
