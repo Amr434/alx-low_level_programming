@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
-*_memcpy - is used to copy a block 
-*
+*_memcpy - is used to copy a block.
 *@dest:  array of destination.
 *@src:  array of source
 *@n: number of byte.
