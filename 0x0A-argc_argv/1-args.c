@@ -7,5 +7,7 @@
 */
 int main(int arcg, __attribute__((__unused__)) char *argv[])
 {
-printf("%d\n", arcg);
+printf("%d\n", --arcg);
+
+return (0);
 }
