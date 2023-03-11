@@ -4,7 +4,7 @@
 *main - main Entry point of program
 *@arcg: number of argument in argv.
 *@argv: array of string.
-*return: main return 0 mean project success.
+*Return: main return 0 mean project success.
 */
 int main(__attribute__((unused)) int arcg, char *argv[])
 {
