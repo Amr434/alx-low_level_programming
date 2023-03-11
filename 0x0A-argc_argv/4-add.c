@@ -24,12 +24,11 @@ return (1);
 result = result + x;
 }
 printf("%d\n", result);
-return (0);
 }
 else
 {
 
-printf("%d\n", 0);
+printf("%s\n", "0");
 }
 return (0);
 }
