@@ -16,7 +16,7 @@ int i, result = 1;
 for (i = 1 ; i < arcg ; i++)
 {
 int x = strtol(argv[i], NULL, 10);
-result = result * x;
+result = result *x;
 }
 printf(" %d\n", result);
 return (0);
