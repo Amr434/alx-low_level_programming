@@ -18,7 +18,7 @@ for (i = 1 ; i < arcg ; i++)
 {
 int x = strtol(argv[i], NULL, 10);
 
-for ( j= 0 ; argv[i][j] !='\0' ; j++)
+for (j = 0 ; argv[i][j] != '\0' ; j++)
 {
 if (!isdigit(argv[i][j]))
 {
