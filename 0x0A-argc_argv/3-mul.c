@@ -1,31 +1,29 @@
-#include<stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /**
-*main - main Entry point of program
-*@arcg: number of argument in argv.
-*@argv: array of string.
-*Return: main return 0 mean project success.
-*/
-int main(int arcg, char *argv[])
-{
-if (arcg > 1)
-{
-int i, result = 1;
+ * main - Prints the multiplication of two numbers, followed by a new line.
+ * @argc: Argument count/number.
+ * @argv: Argument vector , array of pointers to the arguments.
+ * Return: If the program receives two arguments - 0.
+ *         If the program does not receive two arguments - 1.
+ */
 
-for (i = 1 ; i < arcg ; i++)
+int main(int argc, char *argv[])
 {
-int x = strtol(argv[i], NULL, 10);
-result = result *x;
-}
-printf("%d\n", result);
-return (0);
-}
-else
-{
+	int i, n1, n2;
 
-printf("%s\n", "Error");
-return (1);
-}
-return (0);
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[2]);
+	i = n1 * n2;
+
+	printf("%d\n", i);
+
+	return (0);
 }
