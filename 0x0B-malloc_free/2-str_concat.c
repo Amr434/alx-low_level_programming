@@ -16,7 +16,7 @@ char *newarr;
 if (s1 == NULL && s2 == NULL)
 return (NULL);
 
-size = strlen(s1) + strlen(s2);
+size = strlen(s1) + strlen(s2) + 1;
 newarr = malloc(size *sizeof(char));
 
 if (newarr == NULL)
