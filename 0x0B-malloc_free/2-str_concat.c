@@ -1,50 +1,43 @@
+#include "main.h"
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+
 /**
-*str_concat - func concat to string
-*@s1: array of char as input
-*@s2: array of char as input
-*Return: pointer to new array
-*/
+ * str_concat - concatenates two strings
+ * @s1: string to be joined to
+ * @s2: string to join s1
+ *
+ * Return: pointer to newly allocated space in memory
+ *         containing concatenated string , or NULL if error
+ *         in concatenating
+ */
+
 char *str_concat(char *s1, char *s2)
 {
-unsigned int i, j, count1, count2;
-unsigned int size;
-char *newarr;
+	char *join;
+	int copy = 0;
+	int length = 0;
+	int i;
 
-if (s1 == NULL && s2 == NULL)
-return NULL;
+	if (s1 == NULL)
+		s1 = "";
 
-if (s1 != NULL)
-{
-for (count1 = 0 ; s1[count1] ; count1++);
-}
+	if (s2 == NULL)
+		s2 = "";
 
-if (s2 != NULL)
-{
-for (count2 = 0 ; s2[count2] ; count2++);
-}
+	for (i = 0; s1[i] || s2[i]; i++)
+		length++;
 
+	join = malloc(sizeof(char) * length);
 
-size = count1 + count2;
+	if (join == NULL)
+		return (NULL);
 
+	for (i = 0; s1[i]; i++)
+		join[copy++] = s1[i];
 
-newarr = malloc(size *sizeof(char));
+	for (i = 0; s2[i]; i++)
+		join[copy++] = s2[i];
 
-if (newarr == NULL)
-return (NULL);
-
-
-for (i = 0 ;  i < count1; i++)
-{
-newarr[i] = s1[i];
-}
-for (j = 0 ;  j < count2 ; j++)
-{
-newarr[i] = s2[j];
-i++;
-}
-
-return (newarr);
+	return (join);
 }
