@@ -1,45 +1,51 @@
-/**
-*argstostr - combine program paramter.
-*@ac: number of argument.
-*@av: array of arguments.
-*Return: array of combine argu
-*/
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+
+/**
+ * argstostr - concatenates all the arguments of the program
+ *             arguments sepreated by newline.
+ * @ac: number of arguments
+ * @av: double pointer(array pointer) to arguments
+ *
+ * Return: NULL if ac || av = 0 or error
+ *         else pointer to new string
+ */
+
 char *argstostr(int ac, char **av)
 {
-int i, j, n, k;
+	int i, j;
+	int k = 0;
+	int n = 0;
+	char *str;
 
-char *arr;
-if (ac == 0 || av == NULL)
-return (NULL);
-n = 0;
-for (i = 0 ; i < ac ; i++)
-{
+	if (ac <= 0 || av == NULL)
+		return (NULL);
 
-for (j = 0 ; av[i][j] ; j++)
-n++;
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+			n++;
+		n++;
+	}
 
-n++;
-}
+	n++;
+	str = malloc(n * sizeof(char));
 
-n++;
+	if (str == NULL)
+		return (NULL);
 
-arr = malloc(n *sizeof(char));
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j]; j++)
+		{
+			str[k] = av[i][j];
+			k++;
+		}
+		str[k] = '\n';
+		k++;
+	}
 
-k = 0;
-for (i = 1 ; i <= ac ; i++)
-{
-
-for (j = 0 ; av[i][j] ; j++)
-{
-arr[k] = av[i][j];
-k++;
-}
-arr[k] = '\n';
-k++;
-}
-
-return (arr);
-
+	str[k] = '\0';
+	return (str);
 }
