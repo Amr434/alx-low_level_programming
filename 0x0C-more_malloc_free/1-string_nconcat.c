@@ -18,10 +18,16 @@ i++;
 while (s2[f])
 f++;
 
+if (s1 == NULL)
+i=0;
+if(s2 == NULL)
+f = 0;
+
+
 if (n >= f)
 n = f;
 
-newarr = malloc((i *sizeof(*s1)) + (sizeof(*s2) * n));
+newarr = malloc(sizeof(char) * (n + i + 1));
 
 if (newarr == NULL)
 {
@@ -38,6 +44,8 @@ for (x = 0 ; x < n ; x++)
 newarr[j] = s2[x];
 j++;
 }
+j++;
+newarr[j] = '\n';
 
 
 return (newarr);
