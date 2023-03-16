@@ -15,17 +15,22 @@ unsigned int f;
 char *newarr;
 i = 0;
 f = 0;
-while (s1[i])
-i++;
-
-while (s2[f])
-f++;
 
 if (s1 == NULL)
 i=0;
-if(s2 == NULL)
-f = 0;
+else 
+{
+while (s1[i])
+i++;
+}
 
+if (s2 == NULL)
+f = 0;
+else
+{
+while (s2[f])
+f++;
+}
 
 if (n >= f)
 n = f;
