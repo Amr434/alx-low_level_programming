@@ -8,7 +8,10 @@
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int i, x, j, f;
+unsigned int i;
+unsigned int x;
+unsigned int j;
+unsigned int f;
 char *newarr;
 i = 0;
 f = 0;
@@ -45,7 +48,7 @@ newarr[j] = s2[x];
 j++;
 }
 j++;
-newarr[j] = '\n';
+newarr[j] = '\0';
 
 
 return (newarr);
