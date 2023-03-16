@@ -11,12 +11,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *arr;
 if (nmemb == NULL || size == NULL)
-return NULL;
-  
+return (NULL);
+
 arr = calloc(nmemb, size);
-  
 if (arr == NULL)
-return NULL;
+return (NULL);
+
 return (arr);
 }
 
