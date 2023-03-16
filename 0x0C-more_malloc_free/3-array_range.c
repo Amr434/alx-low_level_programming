@@ -18,7 +18,7 @@ return (NULL);
 n = max - min;
 
 
-arr = malloc(n *sizeof(long int));
+arr = malloc((n + 1) *sizeof(int));
 if (arr ==  NULL)
 return (NULL);
 
