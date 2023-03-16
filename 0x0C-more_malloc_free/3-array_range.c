@@ -22,9 +22,10 @@ arr = malloc(n *sizeof(long int));
 if (arr ==  NULL)
 return (NULL);
 
-for (i = min; i <= max ; i++)
+for (i = 0 ; i <= n ; i++)
 {
-arr[i] = i;
+arr[i] = min;
+min++;
 }
 
 return (arr);
