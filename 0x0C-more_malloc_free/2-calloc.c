@@ -10,7 +10,11 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 void *arr;
+<<<<<<< HEAD
 if (nmemb == 0 || size == NULL)
+=======
+if (nmemb == 0 || size == 0)
+>>>>>>> 875bf23d576f7ea217187ec2c20d8d65272c5f14
 return (NULL);
 
 arr = calloc(nmemb, size);
