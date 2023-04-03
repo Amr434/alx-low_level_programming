@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 /**
 *list_len - func get number of nodes
 *@h: pointer to list node
