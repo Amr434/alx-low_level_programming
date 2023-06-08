@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 *_puts_recursion - print all charchter follwed by newline.
-*@s: arr argument
+*@s: array of arguments
 */
 
 void _puts_recursion(char *s)
