@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * check_strlen - return length of string
+ * get_strlen - return length of string
  * @s: string to check
  *
  * Return: length of s
@@ -11,11 +11,11 @@ int get_strlen(char *s)
 	if (*s == '\0')
 		return (0);
 	else
-		return (1 + get_strlen(s + 1));
+		return (1 + check_strlen(s + 1));
 }
 
 /**
- * check_palindrome - checks to see if a string is a palindrome
+ * show_palindrome - checks to see if a string is a palindrome
  * @str: string to check
  * @len: length of string
  * @p: possible palindrome
