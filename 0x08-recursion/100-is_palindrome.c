@@ -11,7 +11,7 @@ int get_strlen(char *s)
 	if (*s == '\0')
 		return (0);
 	else
-		return (1 + check_strlen(s + 1));
+		return (1 + get_strlen(s + 1));
 }
 
 /**
