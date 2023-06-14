@@ -4,7 +4,7 @@
 /**
 *_strdup - copy array into another
 *@str: array of char as input
-*Return: copyarray of charachter.
+*Return: copy array of charachter.
 */
 char *_strdup(char *str)
 {
